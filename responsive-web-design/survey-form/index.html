@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="A tribute page dedicated to one of the world's best cats.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="static/theme.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+        <title>Survey</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row pb-4">
+                <div class="col-sm-2"></div>
+                <div class="col-sm-6">
+                    <h1 class="display-4" id="title">Survey</h1>
+                    <p class="w-100" id="description">Let us know how this application can be improved</p>
+                </div>
+            </div>
+            <form id="survey-form">
+                <div class="form-group row">
+                    <label id="name-label" class="col-sm-2 col-form-label pt-1" for="name">Name:</label>
+                    <div class="col-sm-2">
+                        <input class="form-control-sm" type="text" id="name" placeholder="firstname lastname" required>
+                    </div>
+                    <label id="email-label" class="col-sm-2 col-form-label pt-1" for="email">Email:</label>
+                    <div class="col-sm-2">
+                        <input class="form-control-sm" type="email" id="email" placeholder="email@domain" required>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label id="number-label" class="col-sm-2 col-form-label pt-1" for="number">Favorite Number:</label>
+                    <div class="col-sm-2">
+                        <input class="form-control-sm" type="number" id="number" placeholder="0" min="0" max="1000000">
+                    </div>
+                    <label id="dropdown-label" class="col-sm-2 col-form-label pt-1" for="dropdown">Dropdown:</label>
+                    <div class="col-sm-2">
+                        <select class="form-control-sm" name="dropdown" id="dropdown" required>
+                            <option value="" disabled selected hidden>Select one...</option>
+                            <option value="value1">value1</option>
+                            <option value="value2">value2</option>
+                            <option value="value3">value3</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <legend for="radio" class="col-sm-2 col-form-label pt-1">Some choices:</legend>
+                    <div class="col-sm-2 left">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="radio" id="value1" value="value1">
+                            <label class="form-check-label" for="value1">Value1</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" id="value2" name="radio" value="value2">
+                            <label class="form-check-label" for="value2">Value2</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" id="value3" name="radio" value="value3">
+                            <label class="form-check-label" for="value3">Value3</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" id="value4" name="radio" value="value4">
+                            <label class="form-check-label" for="value4">Value4</label>
+                        </div>
+                    </div>
+                    <legend for="check" class="col-sm-2 col-form-label pt-1">Some more choices:</legend>
+                    <div class="col-sm-2 left">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="check" value="check1">
+                            <label class="form-check-label" for="check1">Check1</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="check" value="check2">
+                            <label class="form-check-label" for="check2">Check2</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="check" value="check3">
+                            <label class="form-check-label" for="check3">Check3</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="check" value="check4">
+                            <label class="form-check-label" for="check4">Check4</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-form-label col-sm-2" for="comments">Additional comments:</label>
+                    <div class="col-sm-6">
+                        <textarea class="form-control" name="comments" rows="5" id="comments" placeholder="other comments or feedback"></textarea>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-sm-2"></div>
+                    <input type="submit" class="btn btn-outline-dark col-sm-2" id="submit" value="Submit">
+                </div>
+            </form>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    </body>
+</html>

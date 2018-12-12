@@ -1,0 +1,27 @@
+select:required:invalid {
+    color: gray;
+}
+
+option {
+    color: black;
+}
+
+body {
+    font-family: 'Roboto Mono', monospace;
+    font-size: small;
+    color: #493511;
+    background-color: #FFDEAD;
+}
+
+@media screen and (min-width: 576px) {
+    label, legend {
+        text-align: right;
+}
+
+.left {
+    text-align: left;
+}
+
+#description, #title {
+    font-weight: bold;
+}
